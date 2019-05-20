@@ -4,25 +4,25 @@ using namespace std;
 
 int main() 
 {
-	string st;//Объявляем строку
-	getline(cin, st);//Определяем количество элементов в строке
-	int length = st.length();//создём из них масив
+	string st;
+	getline(cin, st);
+	int length = st.length();
 	int maxa = 0;
 	int max1, a;
-	for (int i = 0; i < length; i++) //перебераем массив
+	for (int i = 0; i < length; i++) 
 	{		
 		max1 = 0;
-		for (; st[i] == 'a'; i++) //перебиваем массив с нужной нам буквой
+		for (; st[i] == 'a'; i++)
 		{
-			max1++;//подсчитываем количество нужных нвм элементов 
+			max1++;
 		}
-		if (max1 > maxa)//условие большего количества элементов
+		if (max1 > maxa)
 		{
-			maxa = max1;//переопределяем значение
-			a = maxa;//присваеваем число другой переменной
+			maxa = max1;
+			a = maxa;
 		}			
 	}
-	cout << a;//выод числа
+	cout << a;
 
 	return 0;
 }
